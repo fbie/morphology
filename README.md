@@ -26,7 +26,7 @@ to build the library in release mode.
 
 ## How to use it?
 
-Link against the morphology libraries and either use the convenience functions
-for area opening and closing by including `morphology/Filters.h` or
-`morphology/AttributeFilter.h`. The latter one will increase compilation time,
-but you can write your own fancy attributes.
+Link against the morphology libraries and use the convenience functions for area
+opening and closing by including `morphology/Filters.h`. You can also include
+`morphology/AttributeFilter.h`, which will increase compilation time, but you
+can write your own fancy attributes.
