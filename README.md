@@ -15,8 +15,8 @@ image.
 
 ## How do I build it?
 
-You need [SCons](http://www.scons.org/) to build. Once you got that, simply run
-something like
+You need [OpenCV](http://opencv.org/) and [SCons](http://www.scons.org/) to
+build. Once you got that, simply run something like
 
 ```
 $ scons mode=release -j8
