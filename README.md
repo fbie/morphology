@@ -13,7 +13,7 @@ are used for filtering. The most basic filter of this kind is morphological area
 opening and closing, where elements up to a certain area are filtered from the
 image.
 
-## How to build it?
+## How do I build it?
 
 You need [SCons](http://www.scons.org/) to build. Once you got that, simply run
 something like
@@ -24,9 +24,12 @@ $ scons mode=release -j8
 
 to build the library in release mode.
 
-## How to use it?
+## How do I use it?
 
 Link against the morphology libraries and use the convenience functions for area
-opening and closing by including `morphology/Filters.h`. You can also include
-`morphology/AttributeFilter.h`, which will increase compilation time, but you
-can write your own fancy attributes.
+opening and closing by including `morphology/Filters.h`. In the `morphology`
+namespace, you will find `areaOpen()` and `areaClose()` for const and non-const
+OpenCV matrices.
+
+You can also include `morphology/AttributeFilter.h`, which will increase
+compilation time, but you can write your own fancy attributes.
