@@ -1,0 +1,6 @@
+Import("*")
+
+add_library_path()
+env.SharedLibrary("morphology",
+                  Glob("*.cc"),
+                  LIBS=["opencv_core", "gomp"])

@@ -1,0 +1,5 @@
+Import("env")
+
+env.Program("morphology-test.cc",
+			LIBS=["opencv_core", "opencv_highgui", "opencv_imgproc", "gomp", "morphology"],
+			LIBPATH=["../lib"])

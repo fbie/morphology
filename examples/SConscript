@@ -1,0 +1,13 @@
+Import("env")
+
+env.Program("segment.cc",
+            LIBS=["opencv_core", "opencv_highgui", "opencv_imgproc", "morphology"])
+
+env.Program("pattern-spectrum.cc",
+            LIBS=["opencv_core", "opencv_highgui", "opencv_imgproc", "morphology"])
+
+env.Program(["extract-foreground.cc"],
+            LIBS=["opencv_core", "opencv_highgui", "opencv_imgproc", "morphology"])
+            
+env.Program(["close.cc"],
+            LIBS=["opencv_core", "opencv_highgui", "morphology"])
